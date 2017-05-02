@@ -22,7 +22,35 @@ $ bundle install
 constants: your-custom-name
 ```
 
-## Contributing
+## 2. Usage
+
+1. Fill your constants YAML file with the content you need:
+
+```yaml
+company_name: Group Hirthe-Ritchie
+contact:
+  phone: (186)285-7925
+  address: 282 Kevin Brook
+workers: 150
+```
+
+2. Use `{% const [key] %}` Jekyll tag to render the content you need in the `.html` files:
+
+```html
+<h3>{% const company_name %}</h3>
+<p>We are more than {% const workers %} workers in our company located in {% const contact.address %}.</p>
+<a href="tel:{% const contact.phone %}">Call us</a>
+```
+
+3. After rendering the previous example, you will see the following code in the `.html` file:
+
+```html
+<h3>Group Hirthe-Ritchie</h3>
+<p>We are more than 150 workers in our company located in 282 Kevin Brook.</p>
+<a href="tel:(186)285-7925">Call us</a>
+```
+
+## 3. Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -30,6 +58,6 @@ constants: your-custom-name
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
-## License
+## 4. License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
