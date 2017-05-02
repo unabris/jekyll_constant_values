@@ -1,5 +1,7 @@
 # Jekyll Constant Values
 
+[![Gem](https://img.shields.io/gem/v/jekyll_constant_values.svg)](https://rubygems.org/gems/jekyll_constant_values)
+
 __Jekyll Constant Values__ plugin allows you to render constant values in the `.html` files of your [Jekyll][jekyll-web] project. This way, if you have words that you repeat a lot or words that are susceptible to changes (like the number of workers in your company), this plugin helps you to only have to modify the value in a single file.
 
 ## 1. Installation
