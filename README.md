@@ -4,6 +4,10 @@
 
 __Jekyll Constant Values__ plugin allows you to render constant values in the `.html` files of your [Jekyll][jekyll-web] project. This way, if you have words that you repeat a lot or words that are susceptible to changes (like the number of workers in your company), this plugin helps you to only have to modify the value in a single file.
 
+## 0. Important notice!
+
+This repository was created with learning porpouses only. You can always create a `constants:` key into your `_config.yml` and then use `site.constants.foo.bar` in the `.html` pages.
+
 ## 1. Installation
 
 1. Add the following to your site's Gemfile:
